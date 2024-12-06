@@ -1,0 +1,241 @@
+/* General reset */
+body, header, nav, main, footer, img, h1, h2, h3, p, ul, li, article {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New';
+
+}
+
+body {
+    background-color: #212529;
+    color: lightgray;
+    font-family: 'Courier New';
+}
+
+header {
+    width: 25%;
+    float: left;
+}
+
+/* Navigation bar */
+nav {
+    background-color: #6D5D6E;
+    float: right;
+    margin: 1em 1em 0 0;
+    width: 70%;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+    font-size: 4em;
+    color: #fff;
+}
+
+nav li a {
+    color: #fff;
+    text-align: center;
+    padding: 0.5em;
+    text-decoration: none;
+}
+
+nav li:hover {
+    color: #ADB5BD;
+    background-color: #343A40;
+}
+
+.mobile-nav a {
+    color: #fff;
+    font-family: 'Courier New';
+    text-align: center;
+    font-size: 6em;
+    text-decoration: none;
+    padding: 3%;
+    display: block;
+}
+
+.mobile-nav a.menu-icon {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;   
+}
+.mobile {
+    display: block;
+}
+
+/* Main heading */
+#main-aside {
+    text-align: center;
+    font-size: 3.5em;
+    color: #ADB5BD;
+    margin: 1em 0;
+}
+
+/* Main content wrapper */
+.content-wrapper {
+    display: flex;
+    flex-direction: column;  /* Ensures children are stacked vertically */
+    gap: 1.5em;
+    padding: 1em;
+    width: 90%;
+    max-width: auto;
+    margin: 0 auto;
+    font-family: 'Merriweather', serif; /* Apply the fancy font to all divs */
+}
+
+/* Responsive grid for images */
+.images-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5em;
+}
+
+/* Each article item */
+.article-item {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #6C757D;
+    border-radius: 5px;
+    background-color: #2A2A2E;
+    gap: 20px;
+}
+
+/* Image styling */
+.article-image {
+    width: 100%;
+    max-width: 180px; 
+    height: auto;     
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* Adjusting for phones */
+@media only screen and (max-width: 600px) {
+    header {
+        position: static;
+        padding: 2%;
+        text-align: center; 
+    }
+
+    nav {
+        position: sticky;
+        top: 0;
+        width: 100%; 
+        height: auto; 
+        overflow: hidden;
+        background-color: #6D5D6E; 
+        text-align: center; 
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav li {
+        display: block;
+        font-size: 1.2em; 
+        margin: 0.5em 0; 
+    }
+
+    nav li a {
+        text-decoration: none;
+        color: #fff; 
+        padding: 0.5em 1em;
+        display: block; 
+        width: 100%;
+    }
+
+    nav li:hover {
+        background-color: #343A40; 
+    }
+
+    .content-wrapper {
+        padding: 1em; 
+        width: 100%; 
+    }
+
+    .article-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1em;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+   
+    nav li {
+        font-size: 2em;
+    }
+
+    .content-wrapper {
+        padding: 1em;
+    }
+
+    .article-item {
+        flex-direction: row;
+    }
+}
+
+@media only screen and (min-width: 769px) {
+    .article-image {
+        max-width: 180px;
+    }
+
+    nav li {
+        font-size: 3em;
+    }
+
+    .content-wrapper {
+        padding: 1.5em;
+    }
+
+    .article-item {
+        flex-direction: row;
+    }
+}
+
+/* Text content styling */
+.article-content {
+    max-width: 600px;
+}
+
+.article-content h2 {
+    font-size: 1.5em;
+    color: #fff;
+    margin-bottom: 0.3em;
+}
+
+.article-content p {
+    font-size: 1em;
+    line-height: 1.5;
+    color: #ccc;
+    margin-bottom: 0.5em;
+}
+
+/* Author info styling */
+.author-info {
+    font-size: 0.9em;
+    color: #999;
+    font-style: italic;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

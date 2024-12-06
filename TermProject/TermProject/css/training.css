@@ -1,0 +1,140 @@
+/* General reset */
+body, header, nav, main, footer, img, h1, h2, h3, p, ul, li, table, th, td, a {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New';
+
+}
+
+body {
+    background-color: #212529;
+    color: lightgray;
+    font-family: 'Courier New';
+}
+
+/* Header */
+header {
+    width: 25%;
+    float: left;
+}
+
+/* Navigation bar */
+nav {
+    background-color: #6D5D6E;
+    float: right;
+    margin: 1em 1em 0 0;
+    width: 70%;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    font-size: 1.5em;
+    color: #fff;
+}
+
+nav li a {
+    color: #fff;
+    text-align: center;
+    padding: 0.5em 1em;
+    text-decoration: none;
+}
+
+nav li:hover a {
+    color: #ADB5BD;
+    background-color: #343A40;
+}
+
+/* Main content */
+main {
+    padding: 1em;
+}
+
+.tablet-desktop {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1em;
+    color: #fff;
+}
+
+caption {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+    color: #fff;
+    text-align: left;
+}
+
+th, td {
+    padding: 1em;
+    text-align: left;
+    border-bottom: 1px solid #6C757D;
+}
+
+th {
+    background-color: #343A40;
+    color: #fff;
+    text-transform: uppercase; 
+
+td {
+    background-color: #2A2A2E;
+}
+
+table a {
+    color: #1E90FF;
+    text-decoration: none;
+}
+
+table a:hover {
+    text-decoration: underline;
+}
+
+/* Why Attend section */
+h2 {
+    font-size: 1.8em;
+    margin-top: 1em;
+    color: #ADB5BD;
+}
+
+ul {
+    list-style: disc inside none;
+    padding-left: 1.5em;
+}
+
+ul li {
+    margin-bottom: 0.5em;
+}
+
+/* Footer styling */
+footer {
+    padding: 1em;
+    text-align: center;
+    color: #ADB5BD;
+    background-color: #6D5D6E;
+    margin-top: 1em;
+}
+
+footer p {
+    margin-bottom: 0.5em;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+}
